@@ -10,7 +10,8 @@ The following sources and feeds are currently supported:
 # Installation (BeatSyncConsole)
 BeatSyncConsole is a standalone application that runs separately from Beat Saber (and doesn't even need Beat Saber installed).
 * Download BeatSyncConsole.zip from the [Releases](https://github.com/Zingabopp/BeatSync/releases) page.
-  * Windows users should use the zip that includes `_win_x64` in the name.
+  * Windows users should use the zip that includes `_win_x64` in the name (`_win_arm64` builds are also available).
+  * MacOS users should use the zip that includes `_osx_x64` or if you have a newer Apple Silicon (M1/M2/M3 processors), use the .zip with `_osx_arm64` in the name.
   * Not all releases may include BeatSyncConsole.zip.
 * Extract the zip file to a folder on your PC.
   * It is recommended to extract to a folder in your user folder to avoid NTFS file permissions problems that can occur if you extract to a folder like `Program Files` or `Program Files (x86)`.
