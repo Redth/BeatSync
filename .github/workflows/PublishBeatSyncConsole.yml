@@ -33,19 +33,19 @@ jobs:
       run: dotnet build BeatSyncConsole/BeatSyncConsole.csproj --configuration Release
     - name: Publish_Win_x64
       id: publish-win-x64
-      run: dotnet publish BeatSyncConsole/BeatSyncConsole.csproj --configuration Release /p:PublishProfile=win-x64
+      run: dotnet publish BeatSyncConsole/BeatSyncConsole.csproj --configuration Release /p:PublishProfile=win-x64 /p:RuntimeIdentifier=win-x64
     - name: Publish_Win_arm64
       id: publish-win-arm64
-      run: dotnet publish BeatSyncConsole/BeatSyncConsole.csproj --configuration Release /p:PublishProfile=win-arm64
+      run: dotnet publish BeatSyncConsole/BeatSyncConsole.csproj --configuration Release /p:PublishProfile=win-arm64 /p:RuntimeIdentifier=win-arm64
     - name: Publish_Linux_x64
       id: publish-linux64
-      run: dotnet publish BeatSyncConsole/BeatSyncConsole.csproj --configuration Release /p:PublishProfile=linux-x64
+      run: dotnet publish BeatSyncConsole/BeatSyncConsole.csproj --configuration Release /p:PublishProfile=linux-x64  /p:RuntimeIdentifier=linux-x64
     - name: Publish_Osx_x64
       id: publish-osx-x64
-      run: dotnet publish BeatSyncConsole/BeatSyncConsole.csproj --configuration Release /p:PublishProfile=osx-x64
+      run: dotnet publish BeatSyncConsole/BeatSyncConsole.csproj --configuration Release /p:PublishProfile=osx-x64  /p:RuntimeIdentifier=osx-x64
     - name: Publish_Osx_arm64
       id: publish-osx-arm64
-      run: dotnet publish BeatSyncConsole/BeatSyncConsole.csproj --configuration Release /p:PublishProfile=osx-arm64
+      run: dotnet publish BeatSyncConsole/BeatSyncConsole.csproj --configuration Release /p:PublishProfile=osx-arm64  /p:RuntimeIdentifier=osx-arm64
     - name: Upload Win-x64 Artifact
       uses: actions/upload-artifact@v1
       with:
